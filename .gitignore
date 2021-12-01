@@ -1,0 +1,10 @@
+# IDE
+.idea
+
+# Build artifacts
+.gradle
+build
+gradle
+
+# Individual puzzle input
+src/main/resources/puzzles
