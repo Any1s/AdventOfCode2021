@@ -14,6 +14,8 @@ import de.mbdevelopment.adventofcode.year2021.solvers.day6.Day6Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day6.Day6Puzzle2
 import de.mbdevelopment.adventofcode.year2021.solvers.day7.Day7Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day7.Day7Puzzle2
+import de.mbdevelopment.adventofcode.year2021.solvers.day8.Day8Puzzle1
+import de.mbdevelopment.adventofcode.year2021.solvers.day8.Day8Puzzle2
 import java.io.File
 
 val puzzles = mapOf(
@@ -31,6 +33,8 @@ val puzzles = mapOf(
     "day6puzzle2" to Day6Puzzle2(),
     "day7puzzle1" to Day7Puzzle1(),
     "day7puzzle2" to Day7Puzzle2(),
+    "day8puzzle1" to Day8Puzzle1(),
+    "day8puzzle2" to Day8Puzzle2(),
 )
 
 fun main(args: Array<String>) {
