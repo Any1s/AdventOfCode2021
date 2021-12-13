@@ -8,6 +8,8 @@ import de.mbdevelopment.adventofcode.year2021.solvers.day11.Day11Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day11.Day11Puzzle2
 import de.mbdevelopment.adventofcode.year2021.solvers.day12.Day12Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day12.Day12Puzzle2
+import de.mbdevelopment.adventofcode.year2021.solvers.day13.Day13Puzzle1
+import de.mbdevelopment.adventofcode.year2021.solvers.day13.Day13Puzzle2
 import de.mbdevelopment.adventofcode.year2021.solvers.day2.Day2Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day2.Day2Puzzle2
 import de.mbdevelopment.adventofcode.year2021.solvers.day3.Day3Puzzle1
@@ -51,6 +53,8 @@ val puzzles = mapOf(
     "day11puzzle2" to Day11Puzzle2(),
     "day12puzzle1" to Day12Puzzle1(),
     "day12puzzle2" to Day12Puzzle2(),
+    "day13puzzle1" to Day13Puzzle1(),
+    "day13puzzle2" to Day13Puzzle2(),
 )
 
 fun main(args: Array<String>) {
@@ -66,8 +70,8 @@ fun main(args: Array<String>) {
     println("Reading input from: $resource")
     val inputFile = object {}.javaClass.classLoader.getResourceAsStream(resource)
         ?: throw RuntimeException("Could not open resource '$resource'")
-    val inputLines = inputFile.bufferedReader().lineSequence()
-
-    println("Result:")
-    println(puzzles[puzzle]?.solve(inputLines))
+    inputFile.bufferedReader().useLines {
+        println("Result:")
+        println(puzzles[puzzle]?.solve(it))
+    }
 }
