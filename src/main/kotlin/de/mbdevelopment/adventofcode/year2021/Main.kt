@@ -16,6 +16,8 @@ import de.mbdevelopment.adventofcode.year2021.solvers.day15.Day15Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day15.Day15Puzzle2
 import de.mbdevelopment.adventofcode.year2021.solvers.day16.Day16Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day16.Day16Puzzle2
+import de.mbdevelopment.adventofcode.year2021.solvers.day17.Day17Puzzle1
+import de.mbdevelopment.adventofcode.year2021.solvers.day17.Day17Puzzle2
 import de.mbdevelopment.adventofcode.year2021.solvers.day2.Day2Puzzle1
 import de.mbdevelopment.adventofcode.year2021.solvers.day2.Day2Puzzle2
 import de.mbdevelopment.adventofcode.year2021.solvers.day3.Day3Puzzle1
@@ -67,6 +69,8 @@ val puzzles = mapOf(
     "day15puzzle2" to Day15Puzzle2(),
     "day16puzzle1" to Day16Puzzle1(),
     "day16puzzle2" to Day16Puzzle2(),
+    "day17puzzle1" to Day17Puzzle1(),
+    "day17puzzle2" to Day17Puzzle2(),
 )
 
 fun main(args: Array<String>) {
